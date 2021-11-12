@@ -1,12 +1,15 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
+import { BrowserRouter } from "react-router-dom";
+import MenuBar from "./components/MenuBar";
 
 const App = () => {
   return (
-    <div>
-      <h2>Portfolio Test</h2>
-    </div>
+    <BrowserRouter>
+      <MenuBar />
+      <div>
+        <h2>Portfolio Test</h2>
+      </div>
+    </BrowserRouter>
   );
 };
-
 export default App;
