@@ -1,20 +1,26 @@
 import React from "react";
+import { Card, Button } from "react-bootstrap";
 
 export const AboutMe = () => {
   return (
     <div>
       <h1>Let's meet!</h1>
-      <h3>
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since the 1500s, when an unknown printer took a galley of type and
-        scrambled it to make a type specimen book. It has survived not only five
-        centuries, but also the leap into electronic typesetting, remaining
-        essentially unchanged. It was popularised in the 1960s with the release
-        of Letraset sheets containing Lorem Ipsum passages, and more recently
-        with desktop publishing software like Aldus PageMaker including versions
-        of Lorem Ipsum.
-      </h3>
+      <Card style={{ width: "30rem" }}>
+        <Card.Body>
+          <Card.Title>Natacha Bartu</Card.Title>
+          <Card.Subtitle className="mb-2 text-muted">
+            Junior Web Developer
+          </Card.Subtitle>
+          <Card.Text>
+            I am starting a new career a web developer with a great passion for
+            front-end development. I am keen to learn every aspect of the
+            development life-cycle.
+          </Card.Text>
+          <Button variant="outline-dark" href="/">
+            go back
+          </Button>
+        </Card.Body>
+      </Card>
     </div>
   );
 };
