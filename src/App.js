@@ -11,8 +11,9 @@ import { Layout } from "./components/Layout.js";
 const App = () => {
   return (
     <>
+      <MenuBar />
+
       <Layout>
-        <MenuBar />
         <Router>
           <Routes>
             <Route exact path="/" element={<Home />}></Route>
