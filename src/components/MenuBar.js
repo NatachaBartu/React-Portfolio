@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar, Nav, NavDropdown, Container } from "react-bootstrap";
+import { Navbar, Nav, NavDropdown, Container, Image } from "react-bootstrap";
 import logo from "../images/logo.png";
 
 const MenuBar = () => {
@@ -10,9 +10,10 @@ const MenuBar = () => {
           <Container>
             <Navbar.Brand href="#home">
               {" "}
-              <img
+              <Image
                 alt="logo"
                 src={logo}
+                roundedCircle
                 width="40"
                 height="40"
                 className="d-inline-block align-top"
