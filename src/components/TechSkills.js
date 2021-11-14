@@ -5,32 +5,58 @@ export const TechSkills = () => {
   return (
     <Container>
       <h1>My Tech Skills!</h1>
-      <Container
-        className="d-flex justify-content-around"
-        style={{
-          padding: "2rem",
-          textAlign: "center",
-        }}
-      >
+      <br />
+      <p>
+        This area some Languages, Tools, Platforms and Framework that I've been
+        learning!{" "}
+      </p>
+      <br />
+      <Container>
         <Row>
-          <Col sm>
-            <Image src={logo} roundedCircle style={{ height: "8rem" }} />
-          </Col>
-          <Col sm>
-            <Image src={logo} roundedCircle style={{ height: "8rem" }} />
-          </Col>
-          <Col sm>
-            <Image src={logo} roundedCircle style={{ height: "8rem" }} />
-          </Col>
-          <Col sm>
-            <Image src={logo} roundedCircle style={{ height: "8rem" }} />
-          </Col>
-          <Col sm>
-            <Image src={logo} roundedCircle style={{ height: "8rem" }} />
-          </Col>
-          <Col sm>
-            <Image src={logo} roundedCircle style={{ height: "8rem" }} />
-          </Col>
+          <Row>
+            <Col xs={6} md={4}>
+              <Image
+                src={logo}
+                roundedCircle
+                style={{ height: "150px", margin: "10px", padding: "3px" }}
+              />
+            </Col>
+            <Col xs={6} md={4}>
+              <Image
+                src={logo}
+                roundedCircle
+                style={{ height: "150px", margin: "10px", padding: "3px" }}
+              />
+            </Col>
+            <Col xs={6} md={4}>
+              <Image
+                src={logo}
+                roundedCircle
+                style={{ height: "150px", margin: "10px", padding: "3px" }}
+              />
+            </Col>
+            <Col xs={6} md={4}>
+              <Image
+                src={logo}
+                roundedCircle
+                style={{ height: "150px", margin: "10px", padding: "3px" }}
+              />
+            </Col>
+            <Col xs={6} md={4}>
+              <Image
+                src={logo}
+                roundedCircle
+                style={{ height: "150px", margin: "10px", padding: "3px" }}
+              />
+            </Col>
+            <Col xs={6} md={4}>
+              <Image
+                src={logo}
+                roundedCircle
+                style={{ height: "150px", margin: "10px", padding: "3px" }}
+              />
+            </Col>
+          </Row>
         </Row>
       </Container>
     </Container>
