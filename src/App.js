@@ -6,8 +6,8 @@ import { AboutMe } from "./components/AboutMe";
 import { TechSkills } from "./components/TechSkills";
 import { GetInTouch } from "./components/GetInTouch";
 import { NoMatch } from "./components/NoMatch";
-import { Layout } from "./components/Layout.js";
-
+import { Layout } from "./components/Layout";
+import { Footer } from "./components/Footer";
 const App = () => {
   return (
     <>
@@ -24,6 +24,7 @@ const App = () => {
           </Routes>
         </Router>
       </Layout>
+      <Footer />
     </>
   );
 };
