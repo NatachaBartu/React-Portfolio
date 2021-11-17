@@ -1,9 +1,11 @@
 import React from "react";
-import { Container, Row, Col, Image } from "react-bootstrap";
-import { AiFillGithub, AiFillLinkedin, AiOutlineHtml5 } from "react-icons/ai";
+import { Container, Card } from "react-bootstrap";
+import { AiOutlineHtml5 } from "react-icons/ai";
+import { DiCss3Full, DiHeroku } from "react-icons/di";
 import { FaBootstrap } from "react-icons/fa";
 import { GrReactjs } from "react-icons/gr";
-import logo from "../images/logo.png";
+import { SiNetlify, SiPostgresql } from "react-icons/si";
+import { VscCode } from "react-icons/vsc";
 
 export const TechSkills = () => {
   return (
@@ -16,70 +18,23 @@ export const TechSkills = () => {
       </p>
       <br />
       <Container>
-        <Row>
-          <Row>
-            <Col xs={6} md={4}>
-              <Image
-                src={logo}
-                roundedCircle
-                style={{ height: "150px", margin: "10px", padding: "3px" }}
-              />
-            </Col>
-            <Col xs={6} md={4}>
-              <Image
-                src={logo}
-                roundedCircle
-                style={{ height: "150px", margin: "10px", padding: "3px" }}
-              />
-            </Col>
-            <Col xs={6} md={4}>
-              <Image
-                src={logo}
-                roundedCircle
-                style={{ height: "150px", margin: "10px", padding: "3px" }}
-              />
-            </Col>
-            <Col xs={6} md={4}>
-              <Image
-                src={logo}
-                roundedCircle
-                style={{ height: "150px", margin: "10px", padding: "3px" }}
-              />
-            </Col>
-            <Col xs={6} md={4}>
-              <Image
-                src={logo}
-                roundedCircle
-                style={{ height: "150px", margin: "10px", padding: "3px" }}
-              />
-            </Col>
-            <Col xs={6} md={4}>
-              <Image
-                src={logo}
-                roundedCircle
-                style={{ height: "150px", margin: "10px", padding: "3px" }}
-              />
-            </Col>
-          </Row>
-        </Row>
-      </Container>
-      <br />
-      <Container
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-        }}
-      >
-        <AiFillGithub size="2rem" />
+        <Card>
+          <GrReactjs size="7rem" />
 
-        <AiFillLinkedin size="2rem" />
+          <AiOutlineHtml5 size="7rem" />
 
-        <FaBootstrap size="2rem" />
+          <DiCss3Full size="7rem" />
 
-        <GrReactjs size="2rem" />
+          <DiHeroku size="7rem" />
 
-        <AiOutlineHtml5 size="2rem" />
+          <SiNetlify size="7rem" />
+
+          <VscCode size="7rem" />
+
+          <FaBootstrap size="7rem" />
+
+          <SiPostgresql size="7rem" />
+        </Card>
       </Container>
     </Container>
   );
