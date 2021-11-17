@@ -1,10 +1,11 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import MenuBar from "./components/MenuBar";
-import { Home } from "./components/Home";
-import { AboutMe } from "./components/AboutMe";
-import { TechSkills } from "./components/TechSkills";
-import { GetInTouch } from "./components/GetInTouch";
+import { Home } from "./pages/Home";
+import { AboutMe } from "./pages/AboutMe";
+import { Projects } from "./pages/Projects";
+import { TechSkills } from "./pages/TechSkills";
+import { GetInTouch } from "./pages/GetInTouch";
 import { NoMatch } from "./components/NoMatch";
 import { Layout } from "./components/Layout";
 import { Footer } from "./components/Footer";
@@ -20,6 +21,7 @@ const App = () => {
             <Route exact path="/about" element={<AboutMe />}></Route>
             <Route exact path="/skills" element={<TechSkills />}></Route>
             <Route exact path="/contact" element={<GetInTouch />}></Route>
+            <Route exact path="/projects" element={<Projects />}></Route>
             <Route element={<NoMatch />}></Route>
           </Routes>
         </Router>

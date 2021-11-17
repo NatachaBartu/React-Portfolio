@@ -28,6 +28,8 @@ const MenuBar = () => {
               <Nav.Link href="/skills">Tech Skills</Nav.Link>
               <Nav.Link href="/contact">Get in Touch</Nav.Link>
               <NavDropdown title="Key Projects" id="collasible-nav-dropdown">
+                <Nav.Link href="/projects">My Projects</Nav.Link>
+                <Nav.Link href="/projects">My Projects</Nav.Link>
                 <NavDropdown.Item href="#action/3.1">
                   First portfolio
                 </NavDropdown.Item>
