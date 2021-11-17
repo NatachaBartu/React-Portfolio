@@ -8,7 +8,6 @@ export const Home = () => {
       <Container>
         <Figure>
           <Figure.Image
-            //height={100}
             alt="ghandi"
             src={ghandi}
             style={{
