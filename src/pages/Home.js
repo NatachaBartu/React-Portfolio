@@ -1,20 +1,30 @@
 import React from "react";
+import ghandi from "../images/ghandi.jpeg";
+import { Figure, Container } from "react-bootstrap";
 
 export const Home = () => {
   return (
-    <div>
-      <h1>Home Page</h1>
-      <h3>
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since the 1500s, when an unknown printer took a galley of type and
-        scrambled it to make a type specimen book. It has survived not only five
-        centuries, but also the leap into electronic typesetting, remaining
-        essentially unchanged. It was popularised in the 1960s with the release
-        of Letraset sheets containing Lorem Ipsum passages, and more recently
-        with desktop publishing software like Aldus PageMaker including versions
-        of Lorem Ipsum.
-      </h3>
-    </div>
+    <>
+      <Container>
+        <Figure>
+          <Figure.Image
+            //height={100}
+            alt="ghandi"
+            src={ghandi}
+            style={{
+              backgroundImage: `url(${ghandi})`,
+              backgroundSize: "cover",
+              marginTop: "50px",
+            }}
+            rounded
+          />
+          <Figure.Caption align="center">
+            Live as if you were to die tomorrow. Learn as if you were to live
+            forever.
+            <p align="center">– Gandhi</p>
+          </Figure.Caption>
+        </Figure>
+      </Container>
+    </>
   );
 };
