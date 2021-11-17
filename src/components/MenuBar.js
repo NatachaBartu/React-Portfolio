@@ -27,25 +27,23 @@ const MenuBar = () => {
               <Nav.Link href="/about">About Me</Nav.Link>
               <Nav.Link href="/skills">Tech Skills</Nav.Link>
               <Nav.Link href="/contact">Get in Touch</Nav.Link>
+              <Nav.Link href="/projects">My Projects</Nav.Link>
               <NavDropdown title="Key Projects" id="collasible-nav-dropdown">
-                <Nav.Link href="/projects">My Projects</Nav.Link>
-                <Nav.Link href="/projects">My Projects</Nav.Link>
-                <NavDropdown.Item href="#action/3.1">
+                <NavDropdown.Item href="http://natacha-bartu.netlify.app">
                   First portfolio
                 </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
+                <NavDropdown.Item href="https://github.com/NatachaBartu/space-up">
                   Ruby on Rails
                 </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">
+                <NavDropdown.Item href="https://github.com/NatachaBartu/hackathon_memeGenerator">
                   Hackathon Group Project
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">
+                <NavDropdown.Item href="https://github.com/NatachaBartu/Challenges">
                   GitHub Challenges
                 </NavDropdown.Item>
               </NavDropdown>
             </Nav>
-            <Nav></Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
