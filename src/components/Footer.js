@@ -1,6 +1,7 @@
 import React from "react";
 import { Card } from "react-bootstrap";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+import { HiOutlineMail } from "react-icons/hi";
 
 export const Footer = () => {
   return (
@@ -12,6 +13,7 @@ export const Footer = () => {
           <br />
           <AiFillGithub />
           <AiFillLinkedin />
+          <HiOutlineMail />
         </Card.Footer>
       </Card>
     </>
