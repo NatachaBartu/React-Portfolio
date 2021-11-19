@@ -7,7 +7,11 @@ export const Footer = () => {
   return (
     <>
       <br />
-      <Card bg="dark" variant="dark" className="text-center">
+      <Card
+        className="d-flex text-center justify-content-end"
+        bg="dark"
+        variant="dark"
+      >
         <Card.Footer style={{ color: "white" }}>
           &copy;{new Date().getFullYear()} Natacha Bartu | All right reserved
           <br />
