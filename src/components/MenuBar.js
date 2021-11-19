@@ -7,7 +7,7 @@ const MenuBar = () => {
     <>
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
         <Container>
-          <Navbar.Brand href="#home">
+          <Navbar.Brand href="/">
             {" "}
             <Image
               alt="logo"
