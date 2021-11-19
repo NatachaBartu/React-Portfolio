@@ -5,7 +5,7 @@ export const AboutMe = () => {
   return (
     <>
       <Container className=" mb-2 text-center" style={{ marginTop: "40px" }}>
-        <Card className="text-center">
+        <Card border="dark" className="text-center">
           <Card.Header>Natacha Bartu</Card.Header>
           <Card.Body>
             <Card.Title>Junior Web Developer</Card.Title>
