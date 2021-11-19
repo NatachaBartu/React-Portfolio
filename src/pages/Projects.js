@@ -63,7 +63,8 @@ export function Projects() {
                 <Card
                   style={{
                     width: "300px",
-                    heigth: "750px",
+                    height: "600px",
+                    boxSizing: "border-box",
                     margin: "5px",
                     marginBottom: "20px",
                     padding: "7px",
