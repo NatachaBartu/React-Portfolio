@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Card } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import { AiOutlineHtml5 } from "react-icons/ai";
 import { DiCss3Full, DiHeroku } from "react-icons/di";
 import { FaBootstrap } from "react-icons/fa";
@@ -17,24 +17,48 @@ export const TechSkills = () => {
         learning!{" "}
       </p>
       <br />
+
       <Container>
-        <Card>
-          <GrReactjs size="7rem" />
-
-          <AiOutlineHtml5 size="7rem" />
-
-          <DiCss3Full size="7rem" />
-
-          <DiHeroku size="7rem" />
-
-          <SiNetlify size="7rem" />
-
-          <VscCode size="7rem" />
-
-          <FaBootstrap size="7rem" />
-
-          <SiPostgresql size="7rem" />
-        </Card>
+        <Row>
+          {[
+            {
+              image: <SiNetlify size="5rem" />,
+              title: "Netlify",
+            },
+            {
+              image: <SiPostgresql size="5rem" />,
+              title: "Postgresql",
+            },
+            {
+              image: <AiOutlineHtml5 size="5rem" />,
+              title: "HTML",
+            },
+            {
+              image: <DiCss3Full size="5rem" />,
+              title: "Css",
+            },
+            {
+              image: <DiHeroku size="5rem" />,
+              title: "Heroku",
+            },
+            {
+              image: <FaBootstrap size="5rem" />,
+              title: "Bootstrap",
+            },
+            {
+              image: <GrReactjs size="5rem" />,
+              title: "React",
+            },
+            {
+              image: <VscCode size="5rem" />,
+              title: "VsCode",
+            },
+          ].map((item) => (
+            <Col style={{ margin: "5px" }}>
+              {item.image} {item.title}
+            </Col>
+          ))}
+        </Row>
       </Container>
     </Container>
   );

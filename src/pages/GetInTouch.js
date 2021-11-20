@@ -2,7 +2,6 @@ import React from "react";
 import { useState } from "react";
 import { Container, Form, Button, Card, Row } from "react-bootstrap";
 import emailjs from "emailjs-com";
-import { render } from "@testing-library/react";
 
 export const GetInTouch = () => {
   const [validated, setValidated] = useState(false);
@@ -102,4 +101,3 @@ export const GetInTouch = () => {
     </>
   );
 };
-render(<GetInTouch />);
