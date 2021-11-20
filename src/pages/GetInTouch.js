@@ -1,14 +1,41 @@
 import React from "react";
-import {
-  Container,
-  Form,
-  Button,
-  Card,
-  FloatingLabel,
-  Row,
-} from "react-bootstrap";
+import { useState } from "react";
+import { Container, Form, Button, Card, Row } from "react-bootstrap";
+import emailjs from "emailjs-com";
+import { render } from "@testing-library/react";
 
 export const GetInTouch = () => {
+  const [validated, setValidated] = useState(false);
+
+  const handleSubmit = (event) => {
+    const form = event.currentTarget;
+    if (form.checkValidity() === false) {
+      setValidated(true);
+      return;
+    }
+  };
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_qfwwwhw",
+        "template_dev9cp9",
+        e.target,
+        "user_N5oft2SPwCHFUl2rFxK7h"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+  };
+
   return (
     <>
       <Container className=" mb-2" style={{ marginTop: "40px" }}>
@@ -28,26 +55,42 @@ export const GetInTouch = () => {
             Please enter your details, and I will contact you shortly...Thank
             you!
           </Card.Body>
-          <Form>
-            <Form.Group className="mb-3" controlId="formGroupName">
+
+          <Form
+            noValidate
+            validated={validated}
+            onSubmit={(sendEmail, handleSubmit)}
+          >
+            <Form.Group className="mb-3" controlId="validationCustom01">
               <Form.Label>Your Name</Form.Label>
               <Form.Control
+                required
                 type="text"
                 placeholder="Please, enter your name."
+                name="name"
               />
-              <Form.Group className="mb-3" controlId="formGroupEmail">
-                <Form.Label>Email address</Form.Label>
-                <Form.Control type="email" placeholder="Please, enter email" />
-              </Form.Group>
+              <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
             </Form.Group>
 
-            <FloatingLabel
-              controlId="floatingTextarea"
-              label="Comments"
-              className="mb-3"
-            >
-              <Form.Control as="textarea" placeholder="Leave a comment here" />
-            </FloatingLabel>
+            <Form.Group className="mb-3" controlId="validationCustom02">
+              <Form.Label>Email address</Form.Label>
+              <Form.Control
+                required
+                type="email"
+                placeholder="Please, enter email"
+                name="email"
+              />
+              <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
+            </Form.Group>
+
+            <Form.Group className="mb-3" controlId="formGroupMessage">
+              <Form.Label>Message</Form.Label>
+              <Form.Control
+                as="textarea"
+                placeholder="Leave a message here"
+                name="message"
+              />
+            </Form.Group>
             <Row style={{ justifyContent: "center", padding: "20px" }}>
               <Button variant="outline-dark" type="submit">
                 Submit
@@ -59,3 +102,4 @@ export const GetInTouch = () => {
     </>
   );
 };
+render(<GetInTouch />);
