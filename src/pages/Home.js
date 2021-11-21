@@ -14,11 +14,11 @@ export const Home = () => {
         <Card>
           <Card.Body>
             <blockquote className="blockquote mb-0" align="center">
-              <p>
+              <h4 style={{ marginBottom: "20px" }}>
                 {" "}
-                Live as if you were to die tomorrow. Learn as if you were to
-                live forever.{" "}
-              </p>
+                Live as if you were to die tomorrow. <br />
+                Learn as if you were to live forever.{" "}
+              </h4>
               <footer className="blockquote-footer">
                 <cite title="Gandhi">Gandhi</cite>
               </footer>
