@@ -11,27 +11,21 @@ export const Home = () => {
           <Card.ImgOverlay></Card.ImgOverlay>
         </Card>
         <br />
-        <h3 align="center">
-          Live as if you were to die tomorrow. Learn as if you were to live
-          forever.
-        </h3>
-        <p align="center">– Gandhi</p>
+        <Card>
+          <Card.Body>
+            <blockquote className="blockquote mb-0" align="center">
+              <h4 style={{ marginBottom: "20px" }}>
+                {" "}
+                Live as if you were to die tomorrow. <br />
+                Learn as if you were to live forever.{" "}
+              </h4>
+              <footer className="blockquote-footer">
+                <cite title="Gandhi">Gandhi</cite>
+              </footer>
+            </blockquote>
+          </Card.Body>
+        </Card>
       </Container>
-      <Card>
-        <Card.Header>Quote</Card.Header>
-        <Card.Body>
-          <blockquote className="blockquote mb-0">
-            <p>
-              {" "}
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-              posuere erat a ante.{" "}
-            </p>
-            <footer className="blockquote-footer">
-              Someone famous in <cite title="Source Title">Source Title</cite>
-            </footer>
-          </blockquote>
-        </Card.Body>
-      </Card>
     </>
   );
 };
