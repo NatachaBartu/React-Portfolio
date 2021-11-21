@@ -20,9 +20,9 @@ export const Footer = () => {
         <Card.Footer style={{ color: "white" }}>
           &copy;{new Date().getFullYear()} Natacha Bartu | All right reserved
           <br />
-          <AiFillGithub />
-          <AiFillLinkedin />
-          <HiOutlineMail />
+          <AiFillGithub style={{ margin: "5px" }} />
+          <AiFillLinkedin style={{ margin: "5px" }} />
+          <HiOutlineMail style={{ margin: "5px" }} />
         </Card.Footer>
       </Card>
     </>
