@@ -45,7 +45,7 @@ export const GetInTouch = () => {
             padding: "30px",
             boxSizing: "border-box",
             boxShadow: "5px 7px #c4bcbc",
-            border: " 3px solid pink",
+            border: " 3px solid #E86565",
 
             marginBottom: "40px",
           }}
