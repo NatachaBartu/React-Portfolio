@@ -1,14 +1,17 @@
 import React from "react";
-import { Card } from "react-bootstrap";
-import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
-import { HiOutlineMail } from "react-icons/hi";
+// import { Card } from "react-bootstrap";
+// import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+// import { HiOutlineMail } from "react-icons/hi";
 
 export const Footer = () => {
   return (
     <>
-      <br />
+      {/* working on this section now!!!!  */}
+
+      {/* <br />
       <Card
-        className="d-flex text-center justify-content-end"
+        className="d-flex text-center  fixed-bottom"
+        justify-content-end
         bg="dark"
         variant="dark"
         style={{
@@ -33,7 +36,7 @@ export const Footer = () => {
             size="25px"
           />
         </Card.Footer>
-      </Card>
+      </Card> */}
     </>
   );
 };
